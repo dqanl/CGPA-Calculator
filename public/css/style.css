@@ -1,0 +1,113 @@
+/* Body gradient */
+/* Body gradient */
+body {
+  background: linear-gradient(45deg, #18055c, #8797f3, #1c1277);
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh; /* Allow body height to grow with content */
+  display: flex;
+  justify-content: center;
+  padding: 1rem; /* Add padding for spacing when scrolling */
+  box-sizing: border-box;
+}
+
+/* Hover effect using Bootstrap */
+#myToast:hover .toast-body {
+  background-color: #f8d7da; /* Change to your preferred background color */
+  color: #721c24; /* Adjust text color as needed */
+}
+
+/* Smooth transition for background color */
+#myToast .toast-body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Form container */
+.form-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: #0c1a97;
+}
+
+.form-floating {
+  margin-top: 1.5rem;
+}
+
+.form-floating input:focus {
+  border-color: #ff7a8d;
+  box-shadow: 0 0 5px rgba(255, 122, 141, 0.5);
+}
+
+.form-floating label {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.btn-custom {
+  background: linear-gradient(135deg, #2e1fb1, #96a1ff);
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  width: 100%;
+  margin-top: 1.5rem;
+  transition: background 0.3s ease;
+  color: #fff;
+}
+
+.btn-custom:hover {
+  background: linear-gradient(135deg, #96a1ff, #2e1fb1);
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Ensure toast appears above other content
+#myToast {
+  z-index: 1050; 
+}
+ */
+
+#myToast {
+  position: fixed; /* Keeps the toast fixed relative to the viewport */
+  top: 1rem; /* Distance from the top of the screen */
+  right: 1rem; /* Distance from the right edge of the screen */
+  z-index: 1060; /* Ensures it appears above other content */
+  opacity: 1; /* Makes it visible */
+  transition: opacity 0.5s ease, transform 0.3s ease; /* Smooth appearance */
+}
+
+#myToast:hover {
+  transform: scale(1.05); /* Slight zoom effect when hovered */
+}
+
+
+
+

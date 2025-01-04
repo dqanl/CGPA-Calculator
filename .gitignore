@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Build outputs
+dist/
+build/
+
+# Logs
+logs/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+coverage/
+
+# Editor and IDE settings
+.vscode/
+.idea/
+
+# Package manager lock files
+yarn.lock
+package-lock.json
+
+# Temporary files
+tmp/
+temp/
+.sass-cache/
+.eslintcache
+
+
+feildTest.js
+feildTest2.js
+DATA.json
